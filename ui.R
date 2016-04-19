@@ -27,13 +27,17 @@ shinyUI(navbarPage(
       ## Replace here with a list view - start here##     
       fluidRow(
         sliderInput("bins",
-                    "Number of bins:",
+                    "Zoom in/out:",
                     min = 1,
                     max = 50,
-                    value = 30, width="100%")
+                    value = 30, width="100%"),
+        selectInput(inputId = "crime_category",
+                    label = "Select Crime Category:",
+                    choices = c("Alcohol Abuse", "Assault", "Auto Theft", "Burglary","Criminal Presence","Disorderly Conduct","Drugs","Homicide","Theft","Violent Assault"),
+                    selected = "Assault")
       ),
       fluidRow(
-        plotOutput("distPlot")
+        tags$img(src='seattle_map.png')
       )
       ## Replace here with a list view - End here##     
     )
