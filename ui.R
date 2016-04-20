@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(leaflet)
 
 # Define UI for application that draws a histogram
 shinyUI(navbarPage(
@@ -27,7 +28,7 @@ shinyUI(navbarPage(
       ## Replace here with a list view - start here##     
       fluidRow(
         sliderInput("bins",
-                    "Zoom in/out:",
+                    "Zoom in/ou:",
                     min = 1,
                     max = 50,
                     value = 30, width="100%"),
@@ -38,7 +39,8 @@ shinyUI(navbarPage(
       ),
       fluidRow(
         tags$img(src='seattle_map.png')
-      )
+      ),
+      leafletOutput("mymap", height = "600")
       ## Replace here with a list view - End here##     
     )
   )

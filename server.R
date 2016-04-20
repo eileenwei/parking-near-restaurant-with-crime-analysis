@@ -8,19 +8,17 @@
 #
 
 library(shiny)
+library(leaflet)
 
-# Define server logic required to draw a histogram
+## renderLeaflet() is used at server side to render the leaflet map 
+
 shinyServer(function(input, output) {
-   
-  output$distPlot <- renderPlot({
-    
-    # generate bins based on input$bins from ui.R
-    x    <- faithful[, 2] 
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
-    
-    # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    
+  output$mymap <- renderLeaflet({
+    # define the leaflet map object
+    leaflet() %>%
+      addTiles() %>%
+      setView(lng = -122.3321, lat = 47.6062 , zoom = 15) %>%
+      addMarkers(lng = -122.3321, lat = 47.6062, popup = "Seattle")
   })
   
 })
