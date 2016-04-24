@@ -27,11 +27,7 @@ shinyUI(navbarPage(
     column(width = 6, offset = 3,
       ## Replace here with a list view - start here##     
       fluidRow(
-        sliderInput("bins",
-                    "Zoom in/ou:",
-                    min = 1,
-                    max = 50,
-                    value = 30, width="100%"),
+       
         selectInput(inputId = "crime_category",
                     label = "Select Crime Category:",
                     choices = c("Alcohol Abuse", "Assault", "Auto Theft", "Burglary","Criminal Presence","Disorderly Conduct","Drugs","Homicide","Theft","Violent Assault"),
