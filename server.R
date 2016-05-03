@@ -1,12 +1,3 @@
-
-#
-# This is the server logic of a Shiny web application. You can run the 
-# application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
 # Author: Eileen Wei
 # Email: haochiw@andrew.cmu.edu
 
@@ -31,6 +22,7 @@ library(splitstackshape)
 
 library(shiny)
 library(leaflet)
+
 
 #grab a palette
 library(RColorBrewer)
@@ -141,4 +133,5 @@ shinyServer(function(input, output) {
 })
   
 })
+
 
