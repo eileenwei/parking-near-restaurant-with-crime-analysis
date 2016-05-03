@@ -1,0 +1,10 @@
+198091604 WABlockData/tl_2012_53_tabblock.shp
+21990007 Seattle_Police_Department_Police_Report_Incident.csv
+21984834 WABlockData/tl_2012_53_tabblock.dbf
+5299443 DataObjects/block_seattle.rds
+1570404 WABlockData/tl_2012_53_tabblock.shx
+198091604 WABlockData/tl_2012_53_tabblock.shp
+21990007 Seattle_Police_Department_Police_Report_Incident.csv
+21984834 WABlockData/tl_2012_53_tabblock.dbf
+5299443 DataObjects/block_seattle.rds
+1570404 WABlockData/tl_2012_53_tabblock.shx

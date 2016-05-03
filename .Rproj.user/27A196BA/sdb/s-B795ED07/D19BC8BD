@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n#\n# This is the user-interface definition of a Shiny web application. You can\n# run the application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\n\nlibrary(shiny)\nlibrary(leaflet)\n\n\n# Define UI for application that draws a histogram\n\nshinyUI(fluidPage(\n  titlePanel(\"Team 5 Crime Event Analysis\"),\n  fluidRow(\n    \n    \n    column(3, wellPanel(\n      # This outputs the dynamic UI component\n      uiOutput(\"resList\")\n    )),\n    \n    column(8,\n           tags$p(\"Restaurant:\"),\n           verbatimTextOutput(\"latlong\")\n           ##tags$p(\"Dynamic input value:\"),\n           ##verbatimTextOutput(\"dynamic_value\")\n    ),\n    leafletOutput(\"mymap\", height = \"600\")\n  )\n))\n\n",
+    "created" : 1461041410585.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "515582050",
+    "id" : "D19BC8BD",
+    "lastKnownWriteTime" : 1462274975,
+    "last_content_update" : 1462274975,
+    "path" : "~/Team5/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
